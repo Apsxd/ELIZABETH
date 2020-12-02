@@ -52,12 +52,6 @@ buttons += [[InlineKeyboardButton(text="🌍 ADD ME TO YOUR GROUP 🌍",
                                   url="t.me/Elizabeth_TgBot?startgroup=true"),
 ]]
 
-buttons += [[InlineKeyboardButton(text="💾SOURCE CODE",
-                                  url="test"),
-             InlineKeyboardButton(text="🌳SUPPORT",
-                                  url="test"),
-]]
-
 buttons += [[InlineKeyboardButton(text="🔒 CLOSE THE MENU 🔒",
                                   callback_data="close_menu")]]
 
