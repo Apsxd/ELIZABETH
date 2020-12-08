@@ -9,7 +9,7 @@ TR_STRINGS = (
       "Bazı insanlar en sevilen olduğumuzu düşünse de ...... aşkımızın başkaları için olduğunu anlasınlar, bizi arayın .... çok üzücü ................ sonsuza kadar ...... .... Ep ",
       )
 @run_async
-qt q(bot: Bot, update: Update):
+def qt(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
