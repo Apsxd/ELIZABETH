@@ -1,8 +1,8 @@
 import random
 from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from Elizabeth import dispatcher
+from Elizabeth.modules.disable import DisableAbleCommandHandler
  
 TR_STRINGS = (
       "Bu dünyada götürülecek hiçbir şey yok ... sadece aşk ve arkadaşlıktan vazgeçilecek😉😉🙃.Bu dünyada götürülecek hiçbir şey yok ... sadece aşk ve arkadaşlıktan vazgeçilecek😉😉🙃",
