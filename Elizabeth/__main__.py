@@ -39,25 +39,21 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`Hi..Welcome` 👀
-`I'm` [ELIZABETH](https://telegra.ph/file/fcbd6c6c16134b806bfe8.jpg)
-`I'm here to help you manage your groups.. Click Help button to find out more about how to use me to my full potential..`
+`Heya! baby`🎀
+`I'm` [NiKKI](https://telegra.ph/file/16a0360d58e8509d8b98b.jpg)
+`If you have any questions on how to use me, tap /help 🎀
+
+I'm here to make your group management fun and easy!
+i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
+
+Wanna Add me to your Group? Just click the button below!`
 """
 
-buttons = [[InlineKeyboardButton(text=" HELP AND COMMANDS ",
-                                  callback_data="help_back"),
-]]
-
-buttons += [[InlineKeyboardButton(text=" ADD ME TO YOUR GROUP ",
-                                  url="t.me/ELIZABETHTG_bot?startgroup=true"),
-]]
-
-buttons += [[InlineKeyboardButton(text="🔒 CLOSE THE MENU 🔒",
-                                  callback_data="close_menu")]]
-
+buttons += [[InlineKeyboardButton(text=" 🎀ADD ME🎀 ",
+                                  url="t.me/MissNikki_Bot?startgroup=true"),]]
 
 HELP_STRINGS = f"""
-`Hi.. I'm` [ELIZABETH](https://telegra.ph/file/fcbd6c6c16134b806bfe8.jpg)
+`Hi.. I'm` [NIKKI](https://telegra.ph/file/16a0360d58e8509d8b98b.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
@@ -185,12 +181,12 @@ def send_start(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    buttons = [[InlineKeyboardButton(text="Help and Commands ❓",
+    buttons = [[InlineKeyboardButton(text="🎀HELP🎀",
                                   callback_data="help_back"),
     ]]
              
 
-    buttons += [[InlineKeyboardButton(text="Close the Menu 🔒",
+    buttons += [[InlineKeyboardButton(text="🎀CLOSE🎀",
                                   callback_data="close_menu")]]
 
 
@@ -214,7 +210,7 @@ def start_stop(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = "The menu is closed 🔒"
-    buttons = [[InlineKeyboardButton(text="Reopen Menu 🔓",
+    buttons = [[InlineKeyboardButton(text="🎀REOPEN🎀",
                                      callback_data="bot_start")]]
 
     update.effective_message.reply_text(
@@ -634,7 +630,7 @@ def main():
         updater.start_polling(timeout=15, read_latency=4)
         updater.bot.send_message(
             chat_id=MESSAGE_DUMP,
-            text="Elizabeth Started...")
+            text="Nikki Started...")
         client.run_until_disconnected()
 
     updater.idle()
