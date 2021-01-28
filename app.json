@@ -1,9 +1,9 @@
 {
-  "name": "Elizabeth_TgBot",
-  "description": "A Powerful Telegram Bot written in PTB and Telethon",
-  "logo": "https://telegra.ph/file/bd72857322159140bec6b.jpg",
+  "name": "missnikki_bot",
+  "description": "Nikki is sister of nimmi more powerfull than nimmi",
+  "logo": "https://telegra.ph/file/16a0360d58e8509d8b98b.jpg",
   "keywords": ["telegram-bot"],
-  "repository": "https://github.com/p-rinc-e/elizabeth.git",
+  "repository": "https://github.com/basimonpp/nimmi",
   "env": {
     "TL_APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
@@ -50,7 +50,7 @@
     "DONATION_LINK": {
       "description": "Enter Donation link..",
       "required": false,
-      "value": "https://t.me/P_RINC_E"
+      "value": "https://t.me/basi_mon"
     },
     "SUDO_USERS": {
       "description": "List of user id's who will have SUDO rights in your bot(they can't be banned/warned etc. by the bot)",
