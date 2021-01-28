@@ -3,7 +3,7 @@
   "description": "Nikki is sister of nimmi more powerfull than nimmi",
   "logo": "https://telegra.ph/file/16a0360d58e8509d8b98b.jpg",
   "keywords": ["telegram-bot"],
-  "repository": "https://github.com/basimonpp/nimmi",
+  "repository": "https://github.com/basimonpp/nikki",
   "env": {
     "TL_APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
