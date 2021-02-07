@@ -1,166 +1,110 @@
 {
-  "name": "missnikki_bot",
-  "description": "Nikki is sister of nimmi more powerfull than nimmi",
-  "logo": "https://telegra.ph/file/16a0360d58e8509d8b98b.jpg",
-  "keywords": ["telegram-bot"],
-  "repository": "https://github.com/basimonpp/nikki",
+  "name": "nikki",
+  "description": "nokkanda unni vittoikko",
+  "keywords": [
+    "telegram",
+    "best",
+    "group",
+    "manager",
+    "3"
+  ],
+  "repository": "hhttps://github.com/InukaAsith/Daisy",
   "env": {
-    "TL_APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "",
-      "required": true
-    },
-    "TL_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "",
-      "required": true
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable env variables",
+      "value": "ANYTHING"
     },
     "TOKEN": {
-      "description": "Get your bot token from botfather",
-      "value": "",
-      "required": true
-    },
-    "SQLALCHEMY_DATABASE_URI": {
-      "description": "No need change",
-      "required": false,
-      "value": "sqldbtype://username:pw@hostname:port/db_name"
-    },
-    "ENV": {
-     "description": "Set this to ANYTHING..",
-     "value": "ANYTHING"
-    },
-    "API_OPENWEATHER": {
-      "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
-      "value": "",
-      "required": false
-    },
-    "IBM_WATSON_CRED_URL": {
-      "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-      "required": false
-    },
-    "IBM_WATSON_CRED_PASSWORD": {
-      "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-      "required": false
-    },
-    "GBAN_LOGS": {
-      "description": "The group id for logging all gbans",
-      "value": "",
-      "required": true
-    },
-    "DONATION_LINK": {
-      "description": "Enter Donation link..",
-      "required": false,
-      "value": "https://t.me/basi_mon"
-    },
-    "SUDO_USERS": {
-      "description": "List of user id's who will have SUDO rights in your bot(they can't be banned/warned etc. by the bot)",
-      "value": "1398881120",
-      "required": false
-    },
-    "SUPPORT_USERS": {
-      "description": "Support users Id's.",
-      "required": false,
-      "value": "1398881120"
-   },
-   "WHITELIST_USERS": {
-     "description": "Whitelist user Id's.",
-     "required": false,
-     "value": "1398881120"
-   },
-   "DEV_USERS": {
-     "description": "Developers id",
-     "required": false,
-     "value": "1398881120"
-   },
-   "WEBHOOK": {
-      "description": "Nothing here.",
-      "required": false,
+      "description": "Your bot token, as a string.",
       "value": ""
     },
-    "PORT": {
-      "description": "No need change.",
-      "required": false,
+    "AI_API_KEY": {
+      "description": "API key for AI chat..** Exclusively on Daisy**. (Get it from https://coffeehouse.intellivoid.net)",
+      "required" : false,
       "value": ""
     },
-    "YOUTUBE_API_KEY": {
-      "description": "Place your YouTube API Key here",
-      "value": "",
-      "required": false
+    "DAISY_IMG": {
+      "description": "Daisy's Logo.. Telegra.ph only",
+      "value": "https://telegra.ph/file/4be7c7a8a1a9f50b73d21.jpg"
     },
+    
     "OWNER_ID": {
-      "description": "An integer of consisting of your ID",
-      "value": "",
-      "required": true
+      "description": "An integer of consisting of your owner ID",
+      "value": "1141839926"
     },
-    "TEMP_DOWNLOAD_DIRECTORY": {
-      "description": "Do not edit this.",
-      "value": "./",
-      "required": false
+    
+    "TL_APP_ID": {
+      "description": "App ID (get it from my.telegram.org)",
+      "required":true,
+      "value": ""
     },
+    
+    "TL_HASH": {
+      "description": "API HASH (get it from my.telegram.org)",
+      "required":true,
+      "value": ""
+    },
+    
+    
+    
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "",
-      "required": true
+      "value": "InukaASiTH"
     },
-    "DEL_CMDS": {
-      "description": "Delete devs cmds from users",
-      "value": "False",
-      "required": false
-    },
-    "CUSTOM_CMD": {
-      "description": "Custom command handler..",
-      "required": false,
-      "value": ""
-    },
+    
+    
+  
     "URL": {
-      "description": "The Heroku App URL :- edit this to your app name https://your app name.herokuapp.com/",
-      "required": false,
+      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
       "value": ""
     },
     "MESSAGE_DUMP": {
-      "description": "A chat for logging bot events",
-      "value": "",
-      "required": false
+      "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
+      "value": "-1007777777777"
     },
-    "TIME_API_KEY": {
-      "description": "Required for timezone information",
-      "value": "",
-      "required": false
+    "SUDO_USERS": {
+      "description": "A space separated list of user_ids which should be considered sudo users",
+      "value": "1141839926"
     },
-    "CASH_API_KEY": {
-      "description": "Required for currency converter",
-      "value": "",
-      "required": false
+    "SUPPORT_USERS": {
+      "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
+      "value": "1141839926"
     },
-    "WALL_API": {
-      "description": "Get one from https://wall.alphacoders.com/api.php",
-      "value": "",
-      "required": false
-    },   
-    "ALLOW_EXCL": {
-      "description": "No need change",
+    "WHITELIST_USERS": {
+      "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
+      "value": "1141839926"
+    },
+    "DONATION_LINK": {
+      "description": "Optional: link where you would like to receive donations.",
+      "value": "https://www.paypal.me/Your_id_here"
+    },
+    "PORT": {
+      "description": "Port to use for your webhooks",
+      "value": "8443"
+    },
+    "DEL_CMDS": {
+      "description": "Whether to delete commands from users which don't have rights to use that command",
       "value": "True"
     },
     "STRICT_GBAN": {
-      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned",
-      "value": "True",
-      "required": false
+      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+      "value": "True"
+    },
+    "ALLOW_EXCL": {
+      "description": "Whether to allow using exclamation marks ! for commands as well as /.",
+      "value": "True"
+    },
+    "BAN_STICKER": {
+      "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
+      "value": "CAACAgUAAxkBAAIJDV_v-oYKeHJcu2S91Uw55H2RxwzoAAMBAALhGEhVjC5-oPs8-A4eBA"
     }
   },
   "addons": [
     {
       "plan": "heroku-postgresql",
       "options": {
-        "version": "12"
+        "version": "10"
       }
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ]
 }
