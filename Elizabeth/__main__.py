@@ -39,9 +39,9 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-`Heya! baby`🎀
+`Heya!
 `I'm` [NiKKI](https://telegra.ph/file/16a0360d58e8509d8b98b.jpg)
-`If you have any questions on how to use me, tap /help 🎀
+`If you have any questions on how to use me, tap /help
 
 I'm here to make your group management fun and easy!
 i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
@@ -49,7 +49,7 @@ i have lots of handy features, such as flood control, a warning system, a note k
 Wanna Add me to your Group? Just click the button below!`
 """
 
-buttons += [[InlineKeyboardButton(text=" 🎀ADD ME🎀 ",
+buttons += [[InlineKeyboardButton(text="ADD ME",
                                   url="t.me/MissNikki_Bot?startgroup=true"),]]
 
 HELP_STRINGS = f"""
@@ -181,12 +181,12 @@ def send_start(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = PM_START_TEXT
-    buttons = [[InlineKeyboardButton(text="🎀HELP🎀",
+    buttons = [[InlineKeyboardButton(text="HELP",
                                   callback_data="help_back"),
     ]]
              
 
-    buttons += [[InlineKeyboardButton(text="🎀CLOSE🎀",
+    buttons += [[InlineKeyboardButton(text="CLOSE",
                                   callback_data="close_menu")]]
 
 
@@ -210,7 +210,7 @@ def start_stop(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
     first_name = update.effective_user.first_name
     text = "The menu is closed 🔒"
-    buttons = [[InlineKeyboardButton(text="🎀REOPEN🎀",
+    buttons = [[InlineKeyboardButton(text="REOPEN",
                                      callback_data="bot_start")]]
 
     update.effective_message.reply_text(
